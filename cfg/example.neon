@@ -1,0 +1,15 @@
+server:
+    host: example.com
+    port: 8888
+
+broker:
+    type: BearSys\WSF\Brokers\Redis\Redis # class implementing BearSys\WSF\Brokers\IBroker
+    customHandlers:
+        __keyevent@1__:expired: # ExampleHandler - class implementing BearSys\WSF\Handlers\IHandler
+
+routes:
+    /example: # ExampleReceiver - class implementing BearSys\WSF\Receivers\IReceiver
+
+
+factories:
+    - # insert factories implementing BearSys\WSF\DI\IFactory

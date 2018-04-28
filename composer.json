@@ -1,0 +1,22 @@
+{
+  "name": "bearsys/wsf-sandbox",
+  "description": "WebSocket framework for easy creation of scalable WebSocket servers",
+  "keywords": ["websocket", "framework", "scalable"],
+  "homepage": "https://github.com/BearSysCZ/WSF-Sandbox/",
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "Marek Frydrych",
+	  "email": "frydrych.marek@post.cz"
+	}
+  ],
+  "require": {
+    "bearsys/wsf": "dev-master"
+  },
+  "autoload": {
+	"psr-4": {
+	  "BearSys\\WSFExample\\": "app"
+	}
+  },
+  "minimum-stability": "dev"
+}
